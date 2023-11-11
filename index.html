@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: 'Cascadia Code', sans-serif;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            border: 2px dashed black;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .container::before {
+            content: "AxolotlSpigot";
+            display: block;
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            padding: 0 10px;
+            color: black;
+        }
+
+        .link {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+    </style>
+    <title>AxolotlSpigot</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <p>Take your server to the next level.</p>
+            <p><span class="red">5 TPS</span> [<span class="red">|</span>||||] -> <span class="green">20 TPS</span>[<span class="green">|||||</span>]</p>
+            <p><a class="link" href="https://discord.gg/md34xR6QnK">Join the Discord</a></p>
+        </div>
+    </div>
+</body>
+</html>
